@@ -1,0 +1,180 @@
+body {
+    font-family: 'Shippori Antique B1', sans-serif;
+    margin: 0px;
+}
+
+.headerContainer {
+    background-color: white;
+    filter: drop-shadow(0px 1px 4px rgba(0, 0, 0, 10%));
+    animation: fadeBonito 1.5s forwards ease-in-out;
+}
+
+.confineWidth {
+    margin: auto;
+    max-width: 800px;
+}
+
+
+.header {
+    display: flex;
+    height: 60px;
+    align-items: center;
+    flex-direction: row;
+    color: red;
+    justify-content: space-between;
+}
+
+.logoContainer {
+    display: flex;
+    align-items: center;
+}
+
+.fa-airbnb {
+    font-size: 25px;
+    margin-right: 5px;
+}
+
+.searchBar {
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    filter: drop-shadow(0px 1px 1px rgba(0, 0, 0, 25%));
+    background-color: white;
+    padding: 5px;
+}
+
+.searchIcon {
+    font-size: 10px;
+
+}
+
+.searchInput {
+    border: none;
+    outline: none;
+    margin-left: 5px;
+    font-size: .7rem;
+}
+
+.searchBtn {
+    border: none;
+    background-color: red;
+    padding: 3px;
+    color: white;
+    width: 25px;
+    height: 25px;
+    border-radius: 20px;
+}
+
+.end {
+    color: gray;
+    display: flex;
+    align-items: center;
+}
+
+.hostText {
+    font-size: .8rem;
+
+}
+
+.fa-globe-europe {
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 15px;
+}
+
+.fa-user-circle {
+    font-size: 25px;
+}
+
+.mainContent {
+    margin-top: 20px;
+    animation: fadeBonito 1s forwards ease-in-out;
+}
+
+.articleTitle>h3 {
+    margin-bottom: 10px;
+}
+
+.articleSubTitle {
+    display: flex;
+    justify-content: space-between;
+    font-size: .7rem;
+}
+
+.articleSubTitleOne {
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+}
+
+.fa-star {
+    color: red;
+}
+
+.imagesContainer {
+    display: flex;
+    flex-direction: row;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-top: 20px;
+    width: 100%;
+    height: 250px;
+    gap: 6px;
+}
+
+.firstImg {
+    flex-grow: 1;
+    background-color: lightgray;
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwww.thespruceeats.com%2Fthmb%2FNDcLGuxo948rWOn74iDGld766qo%3D%2F2001x1501%2Ffilters%3Afill(auto%2C1)%2F463175387-56a20f2a3df78cf772718085.jpg&f=1&nofb=1");
+    background-size: cover;
+}
+
+.quadImgContainer {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 6px;
+}
+
+.quadImg {
+    width: 49%;
+    background-color: lightgray;
+    background-size: cover;
+}
+
+.quadImg.img1 {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fbigoven-res.cloudinary.com%2Fimage%2Fupload%2Ft_recipe-1280%2Fdirty-risotto.jpg&f=1&nofb=1");
+}
+
+.quadImg.img2 {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Ffatgirlskinny.net%2Fwp-content%2Fuploads%2F2018%2F01%2FMushroom-risotto.jpg&f=1&nofb=1");
+}
+
+.quadImg.img3 {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi1.wp.com%2Fcookingmydreams.com%2Fwp-content%2Fuploads%2F2018%2F08%2Fpescatora2-2.jpg&f=1&nofb=1");
+}
+
+.quadImg.img4 {
+    background-image: url("https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fwww.shelovesbiscotti.com%2Fwp-content%2Fuploads%2F2015%2F05%2Fimage77.jpg&f=1&nofb=1");
+}
+
+@keyframes fadeSimples{
+    0%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
+@keyframes fadeBonito{
+    0%{
+        transform: translate(0px,-30px);
+        opacity: 0;
+    }
+    100%{
+        transform: translate(0px,0px);
+        opacity: 1;
+    }
+}
